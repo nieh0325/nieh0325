@@ -1,0 +1,53 @@
+docker 指令總覽
+指令
+查看 電腦現在有的 image
+docker images
+垃遠端的image
+docker pull [image name]:[image tag]
+推image 到 docker hub
+docker push [image name]:[image tag]
+container
+docker container run --name [container name] [image name]:[image tag]
+container 可以省略成
+docker run --name [container name] [image name]:[image tag]
+
+範例
+docker run --name test01 plpine ls /
+--name: 是指這個container 設定的名城如上範例 test01
+      plpine: 如上範例plpine是我們要在container 起起來的 image
+      plpine 以後的文字: 就是image在container 跑起來以後，使用這個程式( plpine )的功能。
+目前執行中的 container，以上的範例指令都是執行完以後就關閉，所以如果照著上面的步驟做，這個指令應該看不到剛剛起起來的 test01
+docker container ls
+
+互動模式指令
+Interactive mode 指令加上 -it
+docker run -it --name test02 alpine /bin/sh
+
+-d 讓他可以持續的在背景執行
+docker run -d --name test03 alpline tail -f /dev/null
+
+可以用 docker container ls 查看 他會一直在背景跑 還有他的指令
+
+在背景跑的 container 要如何進去那個容器內呢？
+docker exec -it [container id] /bin/sh
+
+停用 container
+docker container stop [container id]
+
+查看所有 container （包含停止的）
+docker container ls -a
+真的刪除 container
+docker container rm [container id]
+以下兩個指令可清除 image
+docker rmi [image name]
+docker rmi [image id]
+docker build
+docker commit
+把變動的 container 打包
+docker commit [container id] [new image name]
+
+docker stop
+停止容器
+docker start
+docker scout quickview
+查看 image 漏洞或建議摘要，執行完會出現類似下方的畫面，可以依照它的建議調整 Dockerfile，所有的版本變動，都要確認一下你的程式可不可以正常運行。
