@@ -1,0 +1,17 @@
+安裝：
+curl -fsSL https://ollama.com/install.sh | sh
+可以使用
+curl http://localhost:11434 
+測試ollama是否啟動，若出現此訊息”Ollama is running”表示ollama已經啟動。
+基本配置
+Ollama通常不需要額外的配置即可運行。但您可以根據需要修改配置文件,通常位於 ~/.ollama/config.json
+設定完成後，直接使用終端機執行”ollama run 模型名字”即可。
+ollama run cwchang/llama-3-taiwan-8b-instruct（8G記憶體不夠）
+啟動Ollama
+直接在終端中輸入以下命令啟動Ollama:
+ollama run llama3.2
+基本命令介紹
+ollama run <model>: 運行指定的模型
+ollama list: 列出已下載的模型
+ollama pull <model>: 下載新模型
+ollama rm <model>: 删除ollama 模型
