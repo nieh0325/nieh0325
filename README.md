@@ -16,8 +16,8 @@
 
 ## 📫 如何联系我
 
-- **邮箱:** [你的邮箱@example.com](mailto:你的邮箱@example.com)
-- **LinkedIn:** [你的 LinkedIn 主页](https://nieh.us.kg)
+- **邮箱:** [我的e—mail信箱](mailto:nieh0325@gmail.com)
+- **LinkedIn:** [我的個人網頁](https://nieh.us.kg)
 - **Twitter:** [你的 Twitter 账号](https://twitter.com/你的-twitter-账号)
 
 ## 📝 最新博客文章
