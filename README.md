@@ -5,8 +5,8 @@
 ## 📫 如何联系我
 
 - **邮箱:** [我的e-mail信箱](mailto:nieh0325@gmail.com)
-- **WordPress:** [我的個人網頁](https://nieh.us.kg)
-- **Halo:** [我的博客](https://nieh0325.ddns-ip.net)
+- **WordPress:** [我的個人網頁](https://web.nieh0325.us.kg)
+- **Halo:** [我的博客](https://halo.nieh0325.us.kg)
 
 ## 📚 项目
 
